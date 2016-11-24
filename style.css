@@ -10,11 +10,6 @@ body {
 	overflow-x: hidden;
 }
 
-#home-image {
-	height: 100%;
-	z-index: -10000;
-}
-
 .white {
 	display: flex;
 	flex-direction: column;
@@ -23,7 +18,7 @@ body {
 	box-sizing: border-box;
 	vertical-align: middle;
 	height: 50%;
-	padding: 20px 20px;
+	padding: 20px;
 	background: #fff;
 }
 
@@ -34,15 +29,9 @@ body {
 	align-items: center;
 	box-sizing: border-box;
 	height: 50%;
-	padding: 20px 20px;
+	padding: 20px;
 	background: #000;
 	color: #fff;
-}
-
-#main p {
-	font-family: 'Roboto', monospace;
-	font-family: 'Share Tech Mono', monospace;
-	font-size: 16px;
 }
 
 a {
@@ -55,26 +44,12 @@ a:visited {
 	color: black;
 }
 
-.fa-github, fa-linkedin {
-	font-size: 30px;
+#projects {
+	display: block;
+	height: 95%;
+	text-align: left;
 }
 
-#next-page {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	height: 15%;
-	padding: 0;
-	color: #ddd;
-	background: #000;
-}
-
-#arrow:hover {
-	font-size: 55px;
-}
-
-#arrow {
-	font-size: 48px;
-	transition-duration: 0.2s;
+#projects li {
+	padding: 5px 0;
 }
