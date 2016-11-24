@@ -6,8 +6,17 @@ html, body {
 
 body {
 	text-align: center;
-	overflow-y: scroll	;
+	overflow-y: scroll;
 	overflow-x: hidden;
+}
+
+h2, h4 {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	padding: 5px 0;
 }
 
 .white {
@@ -16,7 +25,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	box-sizing: border-box;
-	vertical-align: middle;
 	height: 50%;
 	padding: 20px;
 	background: #fff;
@@ -44,12 +52,16 @@ a:visited {
 	color: black;
 }
 
-#projects {
-	display: block;
-	height: 95%;
+#experience {
+	align-items: flex-start;
+	min-height: 50%;
+	height: auto;
 	text-align: left;
 }
 
-#projects li {
-	padding: 5px 0;
+#projects {
+	align-items: flex-start;
+	min-height: 100%;
+	height: auto;
+	text-align: left;
 }
