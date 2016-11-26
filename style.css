@@ -5,6 +5,7 @@ html, body {
 }
 
 body {
+	display: inline-block;
 	text-align: center;
 	overflow-y: scroll;
 	overflow-x: hidden;
@@ -19,7 +20,16 @@ li {
 	padding: 5px 0;
 }
 
-.white {
+a, a:visited {
+	color: #000;
+}
+
+#main a {
+	text-decoration: none;
+	font-size: 30px;
+}
+
+.common {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -27,29 +37,30 @@ li {
 	box-sizing: border-box;
 	height: 50%;
 	padding: 20px;
+}
+
+.white {
 	background: #fff;
 }
 
 .black {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	box-sizing: border-box;
-	height: 50%;
-	padding: 20px;
 	background: #000;
 	color: #fff;
 }
 
-a {
-	text-decoration: none;
-	color: black;
-	font-size: 30px;
+.black a {
+	color: #fff;
 }
 
-a:visited {
-	color: black;
+.black a:visited {
+	color: #fff;
+}
+
+#projects {
+	align-items: flex-start;
+	min-height: 100%;
+	height: auto;
+	text-align: left;
 }
 
 #experience {
@@ -59,9 +70,25 @@ a:visited {
 	text-align: left;
 }
 
-#projects {
-	align-items: flex-start;
-	min-height: 100%;
-	height: auto;
-	text-align: left;
+#experience div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#experience img {
+	margin: 5px;
+}
+
+#img-erigeron {
+	height: 60px;
+}
+
+#img-global {
+	height: 20px;
+}
+
+#img-independent {
+	height: 60px;
 }
