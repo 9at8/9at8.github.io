@@ -57,14 +57,14 @@ a, a:visited {
 }
 
 #projects {
-	align-items: flex-start;
+/*	align-items: flex-start;*/
 	min-height: 100%;
 	height: auto;
 	text-align: left;
 }
 
 #experience {
-	align-items: flex-start;
+/*	align-items: flex-start;*/
 	min-height: 50%;
 	height: auto;
 	text-align: left;
