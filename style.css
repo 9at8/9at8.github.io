@@ -20,13 +20,10 @@ li {
 	padding: 5px 0;
 }
 
-a, a:visited {
-	color: #000;
-}
-
 #main a {
 	text-decoration: none;
 	font-size: 30px;
+	color: #000;
 }
 
 .common {
@@ -56,6 +53,67 @@ a, a:visited {
 	color: #fff;
 }
 
+.card-holder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	max-width: 1040px;
+	padding: 10px;
+}
+
+.card {
+	box-sizing: border-box;
+	width: 300px;
+	height: 300px;
+	margin: 20px;
+}
+
+.card-head {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+	padding: 10px;
+}
+
+.card-body {
+	text-align: center;
+	height: 210px;
+	padding: 20px;
+}
+
+.wc-head {
+	background: #333;
+	color: #fff;
+}
+
+.wc-head a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.wc-body {
+	background: #eee;
+	color: #000;
+}
+
+.bc-head {
+	background: #eee;
+	color: #000;
+}
+
+.bc-head a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.bc-body {
+	background: #333;
+	color: #fff;
+}
+
 #projects {
 /*	align-items: flex-start;*/
 	min-height: 100%;
@@ -70,12 +128,14 @@ a, a:visited {
 	text-align: left;
 }
 
+/*
 #experience div {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
+*/
 
 #experience img {
 	margin: 5px;
@@ -92,3 +152,23 @@ a, a:visited {
 #img-independent {
 	height: 60px;
 }
+
+
+/* ------- Tablets ------- */
+
+
+/*
+@media only screen
+	and (min-device-width: 768px)
+	and (max-device-width: 1366px) {
+		
+		body {
+			font-size: 20px;
+		}
+		
+		#projects, #experience {
+			min-height: 50%;
+			padding: 40px;
+		}
+}
+*/
