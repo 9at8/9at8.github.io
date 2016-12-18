@@ -16,9 +16,8 @@ h2, h4 {
 	padding: 0;
 }
 
-li {
-	padding: 5px 0;
-}
+
+/* ------------- Styles for first section -------------  */
 
 #main a {
 	text-decoration: none;
@@ -26,13 +25,16 @@ li {
 	color: #000;
 }
 
+
+/* ------------ Common styles for sections ------------- */
+
 .common {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	box-sizing: border-box;
-	height: 50vh;
+	height: 50%;
 	padding: 20px;
 }
 
@@ -103,6 +105,9 @@ li {
 }
 
 /*
+
+---- Unused Black Card template ----
+
 .bc-head {
 	background: #eee;
 	color: #000;
@@ -119,23 +124,24 @@ li {
 }
 */
 
+
+/* -------------------- Projects ----------------------- */
+
 #projects {
-	min-height: 100vh;
 	height: auto;
 	text-align: left;
 }
 
-.proj-img {
-	height: 90px;
+.proj-img, .proj-img img {
+	height: 120px;
 }
 
 #img-proj-leap {
 	height: 50px;
 }
 
-#img-proj-raspi {
-	height: 120px;
-}
+
+/* -------------------- Experience --------------------- */
 
 #experience {
 	min-height: 50vh;
