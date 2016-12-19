@@ -100,13 +100,11 @@ h2, h4 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 10px;
-	margin-top: 0;
 }
 
 /*
 
----- Unused Black Card template ----
+---- Unused Black Card template ----	
 
 .bc-head {
 	background: #eee;
@@ -132,7 +130,13 @@ h2, h4 {
 	text-align: left;
 }
 
-.proj-img, .proj-img img {
+.proj-img {
+	margin: 10px;
+	margin-top: 0;
+	height: 120px;
+}
+
+.proj-img img {
 	height: 120px;
 }
 
@@ -144,13 +148,14 @@ h2, h4 {
 /* -------------------- Experience --------------------- */
 
 #experience {
-	min-height: 50vh;
+	min-height: 50%;
 	height: auto;
 	text-align: left;
 }
 
 .exp-img {
 	height: 60px;
+	margin: 10px;
 }
 
 #img-exp-erigeron {
