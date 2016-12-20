@@ -21,7 +21,7 @@ header {
 	min-height: 50%;
 }
 
-header a {
+header a, header a:visited {
 	text-decoration: none;
 	font-size: 30px;
 	color: #000;
@@ -97,7 +97,7 @@ header a {
 	color: #000;
 }
 
-.card-head a {
+.card-head a, .card-head a:visited {
 	text-decoration: none;
 /*	color: #fff;*/
 	color: #000;
