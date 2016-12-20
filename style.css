@@ -5,21 +5,23 @@ html, body {
 }
 
 body {
-	display: inline-block;
 	text-align: center;
-	overflow-y: scroll;
-	overflow-x: hidden;
+	margin: 0;
 }
 
-h2, h4 {
+h1, h2, h4 {
 	margin: 0;
 	padding: 0;
 }
 
 
-/* ------------- Styles for first section -------------  */
+/* ----------------- Styles for header ---------------- */
 
-#main a {
+header {
+	min-height: 50%;
+}
+
+header a {
 	text-decoration: none;
 	font-size: 30px;
 	color: #000;
@@ -34,7 +36,6 @@ h2, h4 {
 	justify-content: center;
 	align-items: center;
 	box-sizing: border-box;
-	height: 50%;
 	padding: 20px;
 }
 
@@ -47,11 +48,11 @@ h2, h4 {
 	color: #fff;
 }
 
-.black a {
+.black > a {
 	color: #fff;
 }
 
-.black a:visited {
+.black > a:visited {
 	color: #fff;
 }
 
@@ -70,13 +71,18 @@ h2, h4 {
 	width: 300px;
 	height: 300px;
 	margin: 20px;
+}
+
+/*
+.img img {
 	filter: grayscale(100%);
 	transition: 0.2s;
 }
 
-.card:hover {
+.card:hover img {
 	filter: grayscale(0%);
 }
+*/
 
 .card-head {
 	display: flex;
@@ -85,13 +91,16 @@ h2, h4 {
 	text-align: center;
 	height: 30px;
 	padding: 10px;
-	background: #333;
-	color: #fff;
+/*	background: #333;*/
+	background: #ffeb3b;
+/*	color: #fff;*/
+	color: #000;
 }
 
 .card-head a {
 	text-decoration: none;
-	color: #fff;
+/*	color: #fff;*/
+	color: #000;
 }
 
 .card-body {
@@ -154,7 +163,6 @@ h2, h4 {
 /* -------------------- Experience --------------------- */
 
 #experience {
-	min-height: 50%;
 	height: auto;
 	text-align: left;
 }
