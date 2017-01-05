@@ -14,11 +14,40 @@ h1, h2, h4 {
 	padding: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
+
+/* ---------------------- Navbar ---------------------- */
+
+/*
+nav {
+	display: flex;
+	align-items: center;
+	background: #000;
+	height: 45px;
+	width: 45px;
+	position: fixed;
+	z-index: 999;
+}
+
+#menu {
+	margin: auto;
+}
+
+#nav-links {
+	display: none;
+	color: #fff;
+}
+*/
+
 
 /* ----------------- Styles for header ---------------- */
 
 header {
 	min-height: 50%;
+	top: 50px;
 }
 
 header a, header a:visited {
@@ -40,7 +69,7 @@ header a, header a:visited {
 }
 
 .white {
-	background: #fff;
+/*	background: #fff;*/
 }
 
 .black {
