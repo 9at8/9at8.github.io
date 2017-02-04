@@ -3,8 +3,7 @@ $(document).ready((() => {
 	
 	var leftButtons = $('#left button');
 	var leftA = $('#left a');
-	leftA.removeAttr('href');
-	var headerHeight = $(window).height() - 50;
+	var headerHeight = $(window).height();
 	
 	$(document).on('scroll', scrollSet);
 	$('#top').css('height', headerHeight);
@@ -12,10 +11,10 @@ $(document).ready((() => {
 	function scrollSet(event) {
 		var scrollPos = $(document).scrollTop();
 		
-		$(leftButtons).each(function () {
+		$(leftA).each(function () {
 			var currLink = $(this);
-			var refElement = $(currLink.attr('id'));
-			if (refElement.position().top <= scrollPos + 50 &&
+			var refElement = $(currLink.attr('href'));
+			if (refElement.position().top <= scrollPos + 51 &&
 				refElement.position().top + refElement.height() > scrollPos) {
 				leftButtons.removeClass('active');
 				currLink.addClass('active');
@@ -25,24 +24,15 @@ $(document).ready((() => {
 		});
 		
 	}
-	
-	function scrollTo(ele, time=500) {
-		return function () {
-			// scroll
-			$('html, body').animate({
-				scrollTop: $(ele).offset().top - 50
-			}, time);
-			
-			// remove active from other links
-			$(leftButtons).removeClass('active');
-			
-			// set this as active
-			$(this).addClass('active');
+
+	$('a[href^="#"]').on('click', function(event) {
+		var target = $(this.getAttribute('href'));
+		if( target.length ) {
+			event.preventDefault();
+			$('html, body').stop().animate({
+				scrollTop: target.offset().top - 50
+			}, 500);
 		}
-	}
-	
-	$('#home').click(scrollTo('#top'));
-	$('#proj').click(scrollTo('#projects'));
-	$('#exp').click(scrollTo('#experience'));
+	});
 
 }));
