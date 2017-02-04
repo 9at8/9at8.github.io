@@ -10,7 +10,7 @@
 	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto|Share+Tech+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
 	<script src="https://use.fontawesome.com/fddf9b5977.js"></script>
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -24,8 +24,8 @@
 	<nav class="black">
 		<div id="left">
 			<a href="#top" class="active"><button id="home">Home</button></a>
-			<a href="#projects"><button id="proj">Projects</button></a>
 			<a href="#experience"><button id="exp">Experience</button></a>
+			<a href="#projects"><button id="proj">Projects</button></a>
 		</div>
 <!--
 		<div id="center">
@@ -57,9 +57,49 @@
 	</nav>
 	
 	<header id="top" class="white">
-		<h1>Aditya Thakral</h1>
-		<p>A Computer Scientist in the making</p>
+		<div>
+			<h1>Aditya Thakral</h1>
+			<p>A Computer Scientist in the making</p>
+		</div>
 	</header>
+	
+	<section id="experience" class="white">
+		<h2>Experience</h2><br>
+		<div class="card-holder">
+			<div class="card bc">
+				<div class="card-head">
+					<h4>Frontend Web Developer</h4> </div>
+				<div class="card-body"> Erigeron Energy
+					<br>June 2016 to July 2016
+					<div class="img exp-img">
+						<picture>
+							<source type="image/webp" srcset="images/experience/erigeron.webp"> <img src="images/experience/erigeron.png" id="img-exp-erigeron"> </picture>
+					</div> Made a Solar Savings Calculator using HTML5, CSS3 and JS; Managed and added features to their WordPress website; Created E-forms </div>
+			</div>
+			<div class="card bc">
+				<div class="card-head">
+					<h4>Chief Graphics Editor</h4> </div>
+				<div class="card-body"> The Global Times
+					<br> January 2012 to January 2016
+					<div class="img exp-img">
+						<picture>
+							<source type="image/webp" srcset="images/experience/global.webp"> <img src="images/experience/global.png" id="img-exp-global"> </picture>
+					</div> Created and edited graphics, and managed graphics editors for school newspaper.
+					<br> Awarded Best Graphics twice and Best Poster once. </div>
+			</div>
+			<div class="card bc">
+				<div class="card-head">
+					<h4>Co-founder and Head of Technology</h4> </div>
+				<div class="card-body"> Independent I
+					<br> April 2013 to April 2014
+					<div class="img exp-img">
+						<picture>
+							<source type="image/webp" srcset="images/experience/independent.webp"> <img src="images/experience/independent.png" id="img-exp-independent"> </picture>
+					</div> We were a group of 4 students focused on Women Empowerment.
+					<br> Awarded Best Creative Communication by The Global Times. </div>
+			</div>
+		</div>
+	</section>
 	
 	<section id="projects" class="black">
 		<h2>Projects</h2><br>
@@ -127,46 +167,9 @@
 		</div>
 	</section>
 	
-	<section id="experience" class="white">
-		<h2>Experience</h2><br>
-		<div class="card-holder">
-			<div class="card bc">
-				<div class="card-head">
-					<h4>Frontend Web Developer</h4> </div>
-				<div class="card-body"> Erigeron Energy
-					<br>June 2016 to July 2016
-					<div class="img exp-img">
-						<picture>
-							<source type="image/webp" srcset="images/experience/erigeron.webp"> <img src="images/experience/erigeron.png" id="img-exp-erigeron"> </picture>
-					</div> Made a Solar Savings Calculator using HTML5, CSS3 and JS; Managed and added features to their WordPress website; Created E-forms </div>
-			</div>
-			<div class="card bc">
-				<div class="card-head">
-					<h4>Chief Graphics Editor</h4> </div>
-				<div class="card-body"> The Global Times
-					<br> January 2012 to January 2016
-					<div class="img exp-img">
-						<picture>
-							<source type="image/webp" srcset="images/experience/global.webp"> <img src="images/experience/global.png" id="img-exp-global"> </picture>
-					</div> Created and edited graphics, and managed graphics editors for school newspaper.
-					<br> Awarded Best Graphics twice and Best Poster once. </div>
-			</div>
-			<div class="card bc">
-				<div class="card-head">
-					<h4>Co-founder and Head of Technology</h4> </div>
-				<div class="card-body"> Independent I
-					<br> April 2013 to April 2014
-					<div class="img exp-img">
-						<picture>
-							<source type="image/webp" srcset="images/experience/independent.webp"> <img src="images/experience/independent.png" id="img-exp-independent"> </picture>
-					</div> We were a group of 4 students focused on Women Empowerment.
-					<br> Awarded Best Creative Communication by The Global Times. </div>
-			</div>
-		</div>
-	</section>
 	
 <!-- Hidden contact section for mobile -->
-	<section id="contact" class="black">
+	<section id="contact" class="white">
 		<a href="https://github.com/9at8" target="_blank">
 			<i class="fa fa-github" aria-hidden="true"></i>
 		</a>

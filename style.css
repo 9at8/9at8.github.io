@@ -83,7 +83,7 @@ nav > div {
 	height: 100%;
 	padding: 15px;
 	transition-duration: 0.3s;
-	font-family: 'Share Tech Mono', monospace;
+	font-family: inherit;
 	font-size: 16px;
 	min-width: 50px;
 }
@@ -107,17 +107,21 @@ nav > div {
 header {
 	min-height: 200px;
 	margin-top: 50px;
+	background: url(images/goose3.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-header a, header a:visited {
-	text-decoration: none;
-	font-size: 30px;
+header > div {
+	padding: 40px;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	transition-duration: 0.5s;
+}
+
+header > div:hover {
+	background: #ffeb3b;
 	color: #000;
-	transition-duration: 0.2s;
-}
-
-header a:hover {
-	color: #ffeb3b;
 }
 
 
@@ -130,10 +134,6 @@ section, header {
 	align-items: center;
 	box-sizing: border-box;
 	padding: 35px 20px;
-}
-
-section {
-	
 }
 
 .black {
@@ -284,9 +284,17 @@ section {
 	display: none;
 }
 
+/* ---------------------- Mobile ------------------------ */
+
 @media only screen 
-	and (max-device-width: 450px)
+	and (max-device-width: 480px)
 	and (orientation: portrait) {
+		header {
+			background: url(images/gooseport.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		
 		#right {
 			display: none;
 		}
@@ -301,7 +309,7 @@ section {
 		#contact a {
 			font-size: 22px;
 			margin: 10px;
-			color: #ffeb3b;
+			color: #000;
 		}
 		
 		#left {
@@ -316,5 +324,14 @@ section {
 			display: flex;
 			width: 100%;
 			justify-content: center;
+		}
+}
+
+@media only screen 
+	and (orientation: portrait) {
+		header {
+			background: url(images/gooseport.png);
+			background-repeat: no-repeat;
+			background-size: cover;
 		}
 }
