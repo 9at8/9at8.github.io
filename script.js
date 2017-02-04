@@ -12,12 +12,12 @@ $(document).ready((() => {
 	function scrollSet(event) {
 		var scrollPos = $(document).scrollTop();
 		
-		$(leftA).each(function () {
+		$(leftButtons).each(function () {
 			var currLink = $(this);
-			var refElement = $(currLink.attr('href'));
+			var refElement = $(currLink.attr('id'));
 			if (refElement.position().top <= scrollPos + 50 &&
 				refElement.position().top + refElement.height() > scrollPos) {
-				leftA.removeClass('active');
+				leftButtons.removeClass('active');
 				currLink.addClass('active');
 			} else {
 				currLink.removeClass('active');
@@ -34,10 +34,10 @@ $(document).ready((() => {
 			}, time);
 			
 			// remove active from other links
-			$(leftA).removeClass('active');
+			$(leftButtons).removeClass('active');
 			
 			// set this as active
-			$(this.parent).addClass('active');
+			$(this).addClass('active');
 		}
 	}
 	
