@@ -3,6 +3,7 @@ $(document).ready((() => {
 	
 	var leftButtons = $('#left button');
 	var leftA = $('#left a');
+	leftA.removeAttr('href');
 	var headerHeight = $(window).height() - 50;
 	
 	$(document).on('scroll', scrollSet);
@@ -43,6 +44,5 @@ $(document).ready((() => {
 	$('#home').click(scrollTo('#top'));
 	$('#proj').click(scrollTo('#projects'));
 	$('#exp').click(scrollTo('#experience'));
-	
-	//$('#top').particleground();
+
 }));
