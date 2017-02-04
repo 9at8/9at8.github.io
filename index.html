@@ -1,199 +1,185 @@
-	<!DOCTYPE html>
-	<html>
-		<head>
-			<!-- Meta tags -->
-			<meta charset="UTF-8">
-			<meta name="author" content="Aditya Thakral">
-			<meta name="keywords" content="Aditya, Thakral">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<!-- Stylesheets -->
-			<link rel="stylesheet" type="text/css" href="style.css">
-			<!-- Fonts -->
-			<link href="https://fonts.googleapis.com/css?family=Roboto|Share+Tech+Mono" rel="stylesheet"> 
-			<script src="https://use.fontawesome.com/fddf9b5977.js"></script>		
-			<title>
-				Aditya Thakral
-			</title>
-		</head>
-		<body>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Meta tags -->
+	<meta charset="UTF-8">
+	<meta name="author" content="Aditya Thakral">
+	<meta name="keywords" content="Aditya, Thakral">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Share+Tech+Mono" rel="stylesheet">
+	<script src="https://use.fontawesome.com/fddf9b5977.js"></script>
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!--	<script type="text/javascript" src="jquery.particleground.min.js"></script>-->
+	<script type="text/javascript" src="script.js"></script>
+	
+	<title>Aditya Thakral</title>
+</head>
+
+<body>
+	<nav class="black">
+		<div id="left">
+			<a href="#top" class="active"><button id="home">Home</button></a>
+			<a href="#projects"><button id="proj">Projects</button></a>
+			<a href="#experience"><button id="exp">Experience</button></a>
+		</div>
 <!--
-			<nav class="black">
-				<div id="menu">&#9776</div>
-				<div id="nav-links">
-					<a href="#top">Home</a>
-					<a href="#projects">Projects</a>
-					<a href="#experience">Experience</a>
-				</div>
-			</nav>
+		<div id="center">
+			<button id="aditya">Aditya Thakral</button>
+		</div>
 -->
-			<header class="white common">
-				<h1>Aditya Thakral</h1>
-				<p>A Computer Scientist in the making</p>
-				<p>
-					<a class="links" href="resume.pdf" target="_blank">
-						<i class="fa fa-file-text" aria-hidden="true"></i>
-					</a>
-					<a class="links" href="https://github.com/9at8" target="_blank">
-						<i class="fa fa-github" aria-hidden="true"></i>
-					</a>
-					<a class="links" href="mailto:aditya.1998thakral@gmail.com" target="_blank">
-						<i class="fa fa-at" aria-hidden="true"></i>
-					</a>
-					<a class="links" href="https://ca.linkedin.com/in/99at8" target="_blank">
-						<i class="fa fa-linkedin" aria-hidden="true"></i>
-					</a>
-				</p>
-			</header>
-			<section id="projects" class="black common">
-				<h2>Projects</h2>
-				<div class="card-holder">
-					<div class="card">
-						<div class="card-head">
-							<h4><a href="https://devpost.com/software/sign-language-translator" target="_blank">
-								Sign Language Translator</a></h4>
-						</div>
-						<div class="card-body">
-							<div class="img proj-img">
-								<picture>
-									<source type="image/webp" srcset="images/projects/leap.webp">
-									<img src="images/projects/leap.png" id=img-proj-leap>
-								</picture>
-							</div>
-							Helps signers communicate by translating American Sign Language (ASL) to text and speech, using a LeapMotion.
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-head">
-							<h4><a href="https://github.com/9at8/EmergencyBroadcast" target="_blank">
-								Emergency Broadcast</a></h4>
-						</div>
-						<div class="card-body">
-							<div class="img proj-img">
-								<picture>
-									<source type="image/webp" srcset="images/projects/raspi.webp">
-									<img src="images/projects/raspi.png">
-								</picture>
-							</div>
-							Uses a Raspberry Pi 2 to broadcast FM signals over a specific range of frequencies in case of an emergency
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-head">
-							<h4><a href="https://github.com/9at8/psynk" target="_blank">
-								Psynk</a></h4>
-						</div>
-						<div class="card-body">
-							<div class="img proj-img">
-								<picture>
-									<source type="image/webp" srcset="images/projects/psynk.webp">
-									<img src="images/projects/psynk.png">
-								</picture>
-							</div>
-							Synchronizes local files and folders using Python 3.5
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-head">
-							<h4><a href="https://github.com/9at8/PyMessenger" target="_blank">
-								PyMessenger</a></h4>
-						</div>
-						<div class="card-body">
-							<div class="img proj-img">
-								<picture>
-									<source type="image/webp" srcset="images/projects/pymessenger.webp">
-									<img src="images/projects/pymessenger.png">
-								</picture>
-							</div>
-							A simple Command Line based text messenger coded in Python 2.7
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-head">
-							<h4><a href="https://github.com/9at8/MySQL-Manager-Python2.7" target="_blank">
-								MySQL Manager</a></h4>
-						</div>
-						<div class="card-body">
-							<div class="img proj-img">
-								<picture>
-									<source type="image/webp" srcset="images/projects/mysql.webp">
-									<img src="images/projects/mysql.png">
-								</picture>
-							</div>
-							High-school Project: Generates and logs MySQL queries. Implemented using Python 2.7
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-head">
-							<h4><a href="https://github.com/9at8/School-Manager" target="_blank">
-								School-Manager</a></h4>
-						</div>
-						<div class="card-body">
-							<div class="img proj-img">
-								<picture>
-									<source type="image/webp" srcset="images/projects/school.webp">
-									<img src="images/projects/school.png">
-								</picture>
-							</div>
-							High-school Project: Stores information in files. Implemented using Python 2.7
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="experience" class="white common">
-				<h2>Experience</h2>
-				<div class="card-holder">
-					<div class="card bc">
-						<div class="card-head">
-							<h4>Frontend Web Developer</h4>
-						</div>
-						<div class="card-body">
-							Erigeron Energy<br>June 2016 to July 2016
-							<div class="img exp-img">
-								<picture>
-									<source type="image/webp" srcset="images/experience/erigeron.webp">
-									<img src="images/experience/erigeron.png" id="img-exp-erigeron">
-								</picture>
-							</div>
-							Made a Solar Savings Calculator using HTML5, CSS3 and JS; 
-							Managed and added features to their WordPress website; 
-							Created E-forms
-						</div>
-					</div>
-					<div class="card bc">
-						<div class="card-head">
-							<h4>Chief Graphics Editor</h4>
-						</div>
-						<div class="card-body">
-							The Global Times<br>
-							January 2012 to January 2016
-							<div class="img exp-img">
-								<picture>
-									<source type="image/webp" srcset="images/experience/global.webp">
-									<img src="images/experience/global.png" id="img-exp-global">
-								</picture>
-							</div>
-							Created and edited graphics, and managed graphics editors for school newspaper.<br>
-							Awarded Best Graphics twice and Best Poster once.
-						</div>
-					</div>
-					<div class="card bc">
-						<div class="card-head">
-							<h4>Co-founder and Head of Technology</h4>
-						</div>
-						<div class="card-body">
-							Independent I<br>
-							April 2013 to April 2014
-							<div class="img exp-img">
-								<picture>
-									<source type="image/webp" srcset="images/experience/independent.webp">
-									<img src="images/experience/independent.png" id="img-exp-independent">
-								</picture>
-							</div>
-							We were a group of 4 students focused on Women Empowerment.<br>
-							Awarded Best Creative Communication by The Global Times.
-						</div>
-					</div>
-				</div>
-			</section>
-		</body>
-	</html>
+		<div id="right">
+			<a href="https://github.com/9at8" target="_blank">
+				<button id="github" class="nav-links">
+					<i class="fa fa-github" aria-hidden="true"></i>
+				</button>
+			</a>
+			<a href="https://linkedin.com/in/99at8" target="_blank">
+				<button id="linkedin" class="nav-links">
+					<i class="fa fa-linkedin" aria-hidden="true"></i>
+				</button>
+			</a>
+			<a href="mailto:aditya.1998thakral@gmail.com" target="_blank">
+				<button id="email" class="nav-links">
+					<i class="fa fa-at" aria-hidden="true"></i>
+				</button>
+			</a>
+			<a href="resume.pdf" target="_blank">
+				<button id="resume" class="nav-links">
+					<i class="fa fa-file-text" aria-hidden="true"></i>
+				</button>
+			</a>
+		</div>
+	</nav>
+	
+	<header id="top" class="white">
+		<h1>Aditya Thakral</h1>
+		<p>A Computer Scientist in the making</p>
+	</header>
+	
+	<section id="projects" class="black">
+		<h2>Projects</h2><br>
+		<div class="card-holder">
+			<div class="card">
+				<div class="card-head">
+					<h4><a href="https://devpost.com/software/sign-language-translator" target="_blank">
+								Sign Language Translator</a></h4> </div>
+				<div class="card-body">
+					<div class="img proj-img">
+						<picture>
+							<source type="image/webp" srcset="images/projects/leap.webp"> <img src="images/projects/leap.png" id=img-proj-leap> </picture>
+					</div> Helps signers communicate by translating American Sign Language (ASL) to text and speech, using a LeapMotion. </div>
+			</div>
+			<div class="card">
+				<div class="card-head">
+					<h4><a href="https://github.com/9at8/EmergencyBroadcast" target="_blank">
+								Emergency Broadcast</a></h4> </div>
+				<div class="card-body">
+					<div class="img proj-img">
+						<picture>
+							<source type="image/webp" srcset="images/projects/raspi.webp"> <img src="images/projects/raspi.png"> </picture>
+					</div> Uses a Raspberry Pi 2 to broadcast FM signals over a specific range of frequencies in case of an emergency </div>
+			</div>
+			<div class="card">
+				<div class="card-head">
+					<h4><a href="https://github.com/9at8/psynk" target="_blank">
+								Psynk</a></h4> </div>
+				<div class="card-body">
+					<div class="img proj-img">
+						<picture>
+							<source type="image/webp" srcset="images/projects/psynk.webp"> <img src="images/projects/psynk.png"> </picture>
+					</div> Synchronizes local files and folders using Python 3.5 </div>
+			</div>
+			<div class="card">
+				<div class="card-head">
+					<h4><a href="https://github.com/9at8/PyMessenger" target="_blank">
+								PyMessenger</a></h4> </div>
+				<div class="card-body">
+					<div class="img proj-img">
+						<picture>
+							<source type="image/webp" srcset="images/projects/pymessenger.webp"> <img src="images/projects/pymessenger.png"> </picture>
+					</div> A simple Command Line based text messenger coded in Python 2.7 </div>
+			</div>
+			<div class="card">
+				<div class="card-head">
+					<h4><a href="https://github.com/9at8/MySQL-Manager-Python2.7" target="_blank">
+								MySQL Manager</a></h4> </div>
+				<div class="card-body">
+					<div class="img proj-img">
+						<picture>
+							<source type="image/webp" srcset="images/projects/mysql.webp"> <img src="images/projects/mysql.png"> </picture>
+					</div> High-school Project: Generates and logs MySQL queries. Implemented using Python 2.7 </div>
+			</div>
+			<div class="card">
+				<div class="card-head">
+					<h4><a href="https://github.com/9at8/School-Manager" target="_blank">
+								School-Manager</a></h4> </div>
+				<div class="card-body">
+					<div class="img proj-img">
+						<picture>
+							<source type="image/webp" srcset="images/projects/school.webp"> <img src="images/projects/school.png"> </picture>
+					</div> High-school Project: Stores information in files. Implemented using Python 2.7 </div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="experience" class="white">
+		<h2>Experience</h2><br>
+		<div class="card-holder">
+			<div class="card bc">
+				<div class="card-head">
+					<h4>Frontend Web Developer</h4> </div>
+				<div class="card-body"> Erigeron Energy
+					<br>June 2016 to July 2016
+					<div class="img exp-img">
+						<picture>
+							<source type="image/webp" srcset="images/experience/erigeron.webp"> <img src="images/experience/erigeron.png" id="img-exp-erigeron"> </picture>
+					</div> Made a Solar Savings Calculator using HTML5, CSS3 and JS; Managed and added features to their WordPress website; Created E-forms </div>
+			</div>
+			<div class="card bc">
+				<div class="card-head">
+					<h4>Chief Graphics Editor</h4> </div>
+				<div class="card-body"> The Global Times
+					<br> January 2012 to January 2016
+					<div class="img exp-img">
+						<picture>
+							<source type="image/webp" srcset="images/experience/global.webp"> <img src="images/experience/global.png" id="img-exp-global"> </picture>
+					</div> Created and edited graphics, and managed graphics editors for school newspaper.
+					<br> Awarded Best Graphics twice and Best Poster once. </div>
+			</div>
+			<div class="card bc">
+				<div class="card-head">
+					<h4>Co-founder and Head of Technology</h4> </div>
+				<div class="card-body"> Independent I
+					<br> April 2013 to April 2014
+					<div class="img exp-img">
+						<picture>
+							<source type="image/webp" srcset="images/experience/independent.webp"> <img src="images/experience/independent.png" id="img-exp-independent"> </picture>
+					</div> We were a group of 4 students focused on Women Empowerment.
+					<br> Awarded Best Creative Communication by The Global Times. </div>
+			</div>
+		</div>
+	</section>
+	
+<!-- Hidden contact section for mobile -->
+	<section id="contact" class="black">
+		<a href="https://github.com/9at8" target="_blank">
+			<i class="fa fa-github" aria-hidden="true"></i>
+		</a>
+		<a href="https://linkedin.com/in/99at8" target="_blank">
+			<i class="fa fa-linkedin" aria-hidden="true"></i>
+		</a>
+		<a href="mailto:aditya.1998thakral@gmail.com" target="_blank">
+			<i class="fa fa-at" aria-hidden="true"></i>
+		</a>
+		<a href="resume.pdf" target="_blank">
+			<i class="fa fa-file-text" aria-hidden="true"></i>
+		</a>
+	</section>
+</body>
+
+</html>

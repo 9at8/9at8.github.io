@@ -21,55 +21,115 @@ a {
 
 /* ---------------------- Navbar ---------------------- */
 
-/*
 nav {
 	display: flex;
 	align-items: center;
-	background: #000;
-	height: 45px;
-	width: 45px;
 	position: fixed;
-	z-index: 999;
+	top: 0;
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 100%;
+	height: 50px;
+	text-align: left;
 }
 
-#menu {
-	margin: auto;
-}
-
-#nav-links {
-	display: none;
+/*
+nav a, nav a:visited {
+	text-decoration: none;
 	color: #fff;
+	transition-duration: 0.2s;
 }
 */
+
+nav div, nav button {
+	display: flex;
+	align-items: center;
+}
+
+nav a, nav a:visited {
+	margin: 0;
+	padding: 0;
+	color: inherit;
+	text-decoration: none;
+	height: 50px;
+	width: 50px;
+}
+
+#left a {
+	width: auto;
+}
+
+nav > div {
+	height: 100%;
+}
+
+#left, #center, #right {
+	flex: 1;
+}
+
+#center {
+	justify-content: center;
+}
+
+#right {
+	justify-content: flex-end;
+}
+
+#left button, #right button {
+	background-color: inherit;
+	color: inherit;
+	border: 0;
+	box-sizing: border-box;
+	height: 100%;
+	padding: 15px;
+	transition-duration: 0.3s;
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 16px;
+	min-width: 50px;
+}
+
+#left button:hover, #right button:hover, .active {
+	background: #ffeb3b !important;
+	color: #000 !important;
+}
+
+#left button:focus, #right button:focus {
+	outline-style: none;
+}
+
+.nav-links {
+	font-size: 18px !important;
+}
 
 
 /* ----------------- Styles for header ---------------- */
 
 header {
-	min-height: 50%;
-	top: 50px;
+/*	min-height: 200px;*/
+	margin-top: 50px;
 }
 
 header a, header a:visited {
 	text-decoration: none;
 	font-size: 30px;
 	color: #000;
+	transition-duration: 0.2s;
+}
+
+header a:hover {
+	color: #ffeb3b;
 }
 
 
 /* ------------ Common styles for sections ------------- */
 
-.common {
+section, header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	box-sizing: border-box;
 	padding: 20px;
-}
-
-.white {
-/*	background: #fff;*/
 }
 
 .black {
@@ -92,14 +152,14 @@ header a, header a:visited {
 	flex-wrap: wrap;
 	box-sizing: border-box;
 	max-width: 1040px;
-	padding: 10px;
+	padding: 00px;
 }
 
 .card {
 	box-sizing: border-box;
 	width: 300px;
 	height: 300px;
-	margin: 20px;
+	margin: 10px;
 }
 
 /*
@@ -211,4 +271,46 @@ header a, header a:visited {
 
 #img-exp-independent {
 	height: 60px;
+}
+
+
+/* ---------------------- Contact ----------------------- */
+
+#contact {
+	display: none;
+}
+
+@media only screen 
+	and (max-device-width: 450px)
+	and (orientation: portrait) {
+		#right {
+			display: none;
+		}
+		
+		#contact {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		#contact a {
+			font-size: 22px;
+			margin: 10px;
+			color: #ffeb3b;
+		}
+		
+		#left {
+			justify-content: center;
+		}
+		
+		#left a {
+			flex: 1;
+		}
+		
+		#left button {
+			display: flex;
+			width: 100%;
+			justify-content: center;
+		}
 }
