@@ -3,7 +3,7 @@ $(document).ready((() => {
 	
 	var leftButtons = $('#left button');
 	var leftA = $('#left a');
-	var headerHeight = $(window).height();
+	var headerHeight = $(window).height() - 50;
 	
 	$(document).on('scroll', scrollSet);
 	$('#top').css('height', headerHeight);
