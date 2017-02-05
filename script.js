@@ -22,7 +22,6 @@ $(document).ready((() => {
 				currLink.removeClass('active');
 			}
 		});
-		
 	}
 
 	$('a[href^="#"]').on('click', function(event) {
