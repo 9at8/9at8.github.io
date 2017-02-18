@@ -18,6 +18,16 @@ a {
 	text-decoration: none;
 }
 
+::selection {
+	background: #ffeb3b;
+	color: #000;
+}
+
+h4::selection {
+	background: #000;
+	color: #ffeb3b;
+}
+
 
 /* ---------------------- Navbar ---------------------- */
 
